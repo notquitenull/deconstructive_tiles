@@ -9,6 +9,6 @@ all:
 		prototypes \
 		graphics
 	cd deploy; zip -r deconstructive_tiles_0.0.1.zip deconstructive_tiles_0.0.1/
-	mv deploy/deconstructive_tiles_0.0.1.zip ~/.factorio/mods/
+	cp deploy/deconstructive_tiles_0.0.1.zip ~/.factorio/mods/
 
 

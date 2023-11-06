@@ -12,3 +12,5 @@ wood boards texture for the tiles, this will change in the futuer.
 
 Dectorio: https://github.com/jpanther/dectorio
 
+# Known Issues:
+ - curved rail ghosts have a large "blind spot" in which the tile doesn't work
