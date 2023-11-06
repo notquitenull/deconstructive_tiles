@@ -23,7 +23,6 @@ local function deconstructive_tile_ghost(event)
 			local pos = {event.created_entity.position.x, event.created_entity.position.y}
 			local entities = surface.find_entities_filtered{position = pos}
 			for j = 1, #entities do 
-				game.print(entities[j].name)
 				entities[j].order_deconstruction(player.force, player)
 			end
 		end
