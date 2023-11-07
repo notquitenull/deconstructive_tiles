@@ -1,6 +1,6 @@
 {
   "name": "deconstructive_tiles",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "title": "Deconstructive Tiles",
   "author": "notquitenull",
   "description": "Deconstructive Tiles adds a new tile which when built orders the deconstruction of whatever is built at that position (that includes it's own ghost if placed as such -> no manual cleanup required :) ).",
