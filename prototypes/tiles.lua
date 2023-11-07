@@ -32,20 +32,24 @@ local function tile_graphics(variant)
 	}
 end
 
-local function deconstructive_tile_template(name) 
+local function deconstructive_tile_template(name, graphics) 
 	return {{	
 		type = "tile",
 		name = base_name .. name,
 		needs_correction = false,
 		minable = {hardness = 0, mining_time = 0},
-		collision_mask = { "ground-tile" },
+		collision_mask = {"layer-33"},
 		walking_speed_modifier = 1,
-		layer = 68,
-		variants = tile_graphics(name),
-		map_color = {r = 139, g = 69, b = 19},
-		pollution_absorption_per_second = 0
+		layer = 33,
+		variants = tile_graphics(graphics),
+		map_color = {r = 150, g = 10, b = 10},
+		pollution_absorption_per_second = 0,
+		check_collision_with_entities = true
 	}}
 end
 
-data:extend(deconstructive_tile_template("base"))
+local cautious_tile = deconstructive_tile_template(tile_variants.cautious, tile_variants.basic)
+cautious_tile[1].collision_mask = {"layer-33", "water-tile", "floor-layer", "object-layer", "transport-belt-layer", "ghost-layer"} 
+data:extend(deconstructive_tile_template(tile_variants.basic, tile_variants.basic))
+data:extend(cautious_tile)
 

@@ -6,3 +6,8 @@ folder = {
 	graphics = base .. "graphics/",
 	prototypes = base .. "prototypes/"
 }
+
+tile_variants = {
+	basic = "base",
+	cautious = "cautious"
+}
