@@ -1,6 +1,6 @@
 {
   "name": "deconstructive_tiles",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "title": "Deconstructive Tiles",
   "author": "notquitenull",
   "description": "Deconstructive Tiles adds new tiles which when built order the deconstruction of whatever is built in their position (that includes their ghost if placed as such -> no manual cleanup required) Graphics temporarrily Hijacked from Dectorio (https://github.com/jpanther/dectorio) will be replaced later.",
