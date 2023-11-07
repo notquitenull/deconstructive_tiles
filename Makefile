@@ -1,14 +1,18 @@
+VERSION=$(shell jq .version info.json)
+DIRNAME=deconstructive_tiles_
+
 all:
 	-@rm -r deploy/* 
-	@mkdir deploy/deconstructive_tiles_0.0.1
-	cp -R -t deploy/deconstructive_tiles_0.0.1/ \
+	-@mkdir deploy/$(DIRNAME)$(VERSION)
+	cp -R -t deploy/$(DIRNAME)$(VERSION)/ \
 		info.json \
 		control.lua \
 		data.lua \
 		general.lua \
 		prototypes \
 		graphics
-	cd deploy; zip -r deconstructive_tiles_0.0.1.zip deconstructive_tiles_0.0.1/
-	cp deploy/deconstructive_tiles_0.0.1.zip ~/.factorio/mods/
+	cd deploy; zip -r $(DIRNAME)$(VERSION).zip $(DIRNAME)$(VERSION)/
+	rm ~/.factorio/mods/$(DIRNAME)*
+	cp deploy/$(DIRNAME)$(VERSION).zip ~/.factorio/mods/
 
 
