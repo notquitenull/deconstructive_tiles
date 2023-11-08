@@ -31,3 +31,4 @@ end
 
 data:extend(item_template(tile_variants.basic))
 data:extend(item_template(tile_variants.cautious))
+data:extend(item_template(tile_variants.ghost_only))

@@ -9,5 +9,8 @@ folder = {
 
 tile_variants = {
 	basic = "base",
-	cautious = "cautious"
+	cautious = "cautious",
+	ghost_only = "ghost-only",
 }
+
+cooldown = 60 * 5

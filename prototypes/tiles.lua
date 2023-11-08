@@ -50,6 +50,7 @@ end
 
 local cautious_tile = deconstructive_tile_template(tile_variants.cautious, tile_variants.basic)
 cautious_tile[1].collision_mask = {"layer-33", "water-tile", "floor-layer", "object-layer", "transport-belt-layer", "ghost-layer"} 
-data:extend(deconstructive_tile_template(tile_variants.basic, tile_variants.basic))
 data:extend(cautious_tile)
+data:extend(deconstructive_tile_template(tile_variants.basic, tile_variants.basic))
+data:extend(deconstructive_tile_template(tile_variants.ghost_only, tile_variants.basic))
 
